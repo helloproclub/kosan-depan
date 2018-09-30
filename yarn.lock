@@ -5548,6 +5548,10 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-component-empty@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-component-empty/-/react-component-empty-2.0.0.tgz#dff0f094c710ab271346eb83172b143096d5ee43"
+
 react-dev-utils@^5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-5.0.2.tgz#7bb68d2c4f6ffe7ed1184c5b0124fcad692774d2"
