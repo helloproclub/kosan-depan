@@ -12,6 +12,10 @@ const LogoLink = styled(Link)`
   vertical-align: top;
   height: 58px;
   line-height: 58px;
+  
+  @media (max-width: 576px) {
+    float: none;
+  }
 `;
 
 function Logo(props) {

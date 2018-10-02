@@ -18,21 +18,32 @@ const HeaderHomepage = styled.div`
     url(${HeroBackground});
   background-size: cover;
   border-bottom-right-radius: 70px;
+  
+  @media (max-width: 1024px) {
+    min-height: auto;
+  }
 `;
 
 const HeaderContent = styled.div`
   margin-top: 280px;
   color: #ffffff;
+  
+  @media (max-width: 1024px) {
+    margin-top: 110px;
+  }
+  @media (max-width: 576px) {
+    margin-top: 80px;
+  }
 `;
 
 const Heading = styled.h1`
-  margin: 0 0 24px;
+  margin: 0 auto 24px 0;
   font-size: 48px;
   line-height: 44px;
 `;
 
 const Description = styled.p`
-  margin-left: 3px;
+  //margin-left: 3px;
   max-width: 565px;
   font-size: 14px;
   line-height: 26px;
@@ -44,11 +55,17 @@ const HeroListing = styled.div`
   flex-direction: row;
   overflow: fragments;
   margin-top: 72px;
+  padding-bottom: 32px;
+  
+  @media (max-width: 576px) {
+    margin-top: 32px;
+    flex-direction: column;
+  }
 `;
 
 const Hero = styled.div`
   display: inline;
-  width: 255px;
+  //width: 255px;
   margin-right: 57px;
 `;
 
@@ -61,9 +78,7 @@ const HeroName = styled.h5`
 `;
 
 const HeroDescription = styled.p`
-  margin: 0;
-  margin-top: 9px;
-  margin-left: 52px;
+  margin:  9px 0 0 52px;
   font-size: 14px;
   line-height: 26px;
 `;
