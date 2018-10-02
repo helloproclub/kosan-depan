@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import EmptyComponent from  'react-component-empty';
 import FacebookSrc from '../../images/social/facebook.png';
 import TwitterSrc from '../../images/social/twitter.png';
 import InstagramSrc from '../../images/social/instagram.png';
@@ -12,6 +13,12 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      seIndexing: process.env.NODE_ENV === 'production' ? <EmptyComponent/> : <meta name="robots" content="noindex" />,
+    }
+  }
   render() {
     return (
       <Router>
@@ -24,6 +31,7 @@ class App extends Component {
             name="description"
             content="Inkubator mahasiswa Universtias Telkom untuk berkumpul dan berdiskusi tentang teknologi, berkompetisi, dan membangun sebuah solusi."
           />
+          {this.state.seIndexing}
         </Helmet>
         <Switch>
           <Route
