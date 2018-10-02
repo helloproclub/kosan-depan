@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import FacebookSrc from '../../images/social/facebook.png';
+import TwitterSrc from '../../images/social/twitter.png';
+import InstagramSrc from '../../images/social/instagram.png';
+import LineSrc from '../../images/social/line.png';
 import HomePage from '../HomePage';
 import NotFoundPage from '../NotFoundPage';
 import Container from '../../components/Container';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 class App extends Component {
   render() {
@@ -58,6 +63,34 @@ class App extends Component {
               <Route component={NotFoundPage} />
             </Switch>
         </Container>
+
+        <Footer
+          greeting={{
+            text: `Do you have something to discuss with us? Let's talk about it.`,
+            href: 'http://go.hellopro.club/telegram',
+            button_text: 'Get in touch',
+          }}
+          copyright="2018 © Proclub Laboratory. All rights reserved. Crafted with ♥ at Telkom University"
+          socials={[
+            {
+              title: 'Facebook Hello Proclub',
+              href: 'https://www.facebook.com/helloproclub',
+              icon_src: FacebookSrc,
+            }, {
+              title: 'Twitter Hello Proclub',
+              href: 'https://www.twitter.com/helloproclub',
+              icon_src: TwitterSrc,
+            }, {
+              title: 'Instagram Hello Proclub',
+              href: 'https://www.instagram.com/helloproclub',
+              icon_src: InstagramSrc,
+            }, {
+              title: 'Line@ Hello Proclub',
+              href: 'https://line.me/ti/p/%40kau3131h',
+              icon_src: LineSrc,
+            },
+          ]}
+        />
       </div>
       </Router>
     );
