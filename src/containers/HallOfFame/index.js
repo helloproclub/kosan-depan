@@ -4,15 +4,17 @@ import ProfileImage from '../../components/Image.js';
 
 const ProfileContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
 
     div {
         margin-right: 50px;
+        margin-bottom: 50px;
     }
 `;
 
 const YearDisplay = styled.div`
     position: absolute;
-    right: 200px; 
+    right: 12%; 
     font-family: 'Poppins';
     font-size: 241px;
     line-height: 362px;
