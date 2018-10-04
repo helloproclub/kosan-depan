@@ -13,7 +13,7 @@ const ProfileContainer = styled.div`
 
 const YearDisplay = styled.div`
     position: absolute;
-    right: 15%; 
+    right: 25vw; 
     font-family: 'Poppins';
     font-size: 241px;
     line-height: 362px;
@@ -24,7 +24,7 @@ const YearDisplay = styled.div`
 `;
 
 const HOFContainer = styled.div`
-    padding: 150px 0;
+    padding: 90px 0;
     
 `;
 

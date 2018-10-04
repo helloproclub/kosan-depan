@@ -25,7 +25,7 @@ const Description = styled.div`
     font-weight: normal;
     line-height: 26px;
     font-size: 14px;
-    width: 286px;
+    width: 250px;
 `;
 
 const MoreLink = styled.div`
@@ -45,7 +45,7 @@ function AchievementCard(props) {
             <img 
                 src="http://studentstelkomuniversity.com/wp-content/uploads/2016/07/proclub2.jpg"
                 heigth="200px"
-                width="286px"
+                width="250px"
             ></img>
             <TopLabel>1st Place</TopLabel>
             <Title>Image Cup Final</Title>

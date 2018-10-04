@@ -7,13 +7,24 @@ const SectionDesc = styled.p`
     width: 470pt;
 `;
 
+const AchievementSection = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
 class HomePage extends Component {
   render() {
       return (
           <div>
-            <div>
+            <div style={{marginBottom: "150px", marginTop: "120px"}}>
                 <h1>Achievement</h1>
-                <AchievementCard></AchievementCard>
+                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque</p>
+                <AchievementSection>
+                    <AchievementCard></AchievementCard>
+                    <AchievementCard></AchievementCard>
+                    <AchievementCard></AchievementCard>
+                    <AchievementCard></AchievementCard>
+                </AchievementSection>
             </div>
             <div>
                 <h1>Hall of Fame</h1>
