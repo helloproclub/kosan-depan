@@ -51,7 +51,7 @@ class App extends Component {
                   name: 'Programmer',
                   description: 'At vero eos et accusamus et iusto odio dignissimos',
                 }, {
-                  name: 'Designer',
+                    name: 'UI/UX Designer',
                   description: 'At vero eos et accusamus et iusto odio dignissimos',
                 }, {
                   name: 'Business Analyst',

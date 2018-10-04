@@ -16,7 +16,6 @@ const FooterSection = styled.div`
 `;
 
 const FooterGreetingCard = styled.div`
-  margin-top: 120px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: right;
