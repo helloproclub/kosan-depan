@@ -8,13 +8,12 @@ const ProfileContainer = styled.div`
 
     div {
         margin-right: 50px;
-        margin-bottom: 50px;
     }
 `;
 
 const YearDisplay = styled.div`
     position: absolute;
-    right: 12%; 
+    right: 15%; 
     font-family: 'Poppins';
     font-size: 241px;
     line-height: 362px;
@@ -41,10 +40,19 @@ class HallOfFame extends React.Component {
                 <YearDisplay>{this.props.year}</YearDisplay>
                 <ProfileContainer>
                     <ProfileImage 
+                        name="Lorem Ipsum Dolor"
+                        division="Programmer"
+                        achievement="99"
+                        src="https://i.kym-cdn.com/entries/icons/original/000/002/232/bullet_cat.jpg"/>
+                    <ProfileImage
+                        name="Lorem Ipsum Dolor"
+                        division="Programmer"
+                        achievement="99"
                         src="https://i.kym-cdn.com/entries/icons/original/000/002/232/bullet_cat.jpg"/>
                     <ProfileImage 
-                        src="https://i.kym-cdn.com/entries/icons/original/000/002/232/bullet_cat.jpg"/>
-                    <ProfileImage 
+                        name="Lorem Ipsum Dolor"
+                        division="Programmer"
+                        achievement="99"
                         src="https://i.kym-cdn.com/entries/icons/original/000/002/232/bullet_cat.jpg"/>
                 </ProfileContainer>
             </HOFContainer>

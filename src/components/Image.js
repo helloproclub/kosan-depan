@@ -16,9 +16,33 @@ const Image = styled.img`
 `;
 
 const ProfileContainer = styled.div`
+    font-family: 'Poppins'
     height: 237px;
     width: 237px;
+    color: white;
 `; 
+
+const ProfileText = styled.div`
+    position: absolute;
+    transform: translateY(-110%) translateY(-26px);
+    margin-left: 30px;
+`;
+
+const ProfileDivision = styled.div`
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+`;
+
+const ProfileName = styled.div`
+    font-size: 18px;
+    font-weight: 600;
+`;
+
+const ProfileAchievement = styled.div`
+    font-size: 14px;
+    font-weight: 600;
+`;
 
 function ProfileImage(props) {
 
@@ -30,6 +54,11 @@ function ProfileImage(props) {
                 src={props.src} alt="">
             </Image>
             <Overlay></Overlay> 
+            <ProfileText>
+                <ProfileDivision>{props.division}</ProfileDivision> 
+                <ProfileName>{props.name}</ProfileName>
+                <ProfileAchievement>{props.achievement ? props.achievement+' achievement' : ''}</ProfileAchievement>
+            </ProfileText>
         </ProfileContainer>
         );
 
