@@ -11,6 +11,7 @@ import NotFoundPage from '../NotFoundPage';
 import Container from '../../components/Container';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import HOFScreen from '../HOFScreen';
 
 class App extends Component {
   constructor(props) {
@@ -68,6 +69,7 @@ class App extends Component {
         <Container>
             <Switch>
               <Route exact path="/" component={HomePage} />
+              <Route exact path="/HallOfFame" component={HOFScreen}/>
               <Route component={NotFoundPage} />
             </Switch>
         </Container>

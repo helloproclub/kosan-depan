@@ -71,7 +71,7 @@ function NavBar(props) {
             Achievements
           </NavLink>
           <NavLinkSeparator/>
-          <NavLink homepage to="/">
+          <NavLink homepage to="/HallOfFame">
             Hall of Fame
           </NavLink>
         </NavLinkWrapper>
@@ -88,7 +88,7 @@ function NavBar(props) {
         <NavLinkSeparator/>
         <NavLink to="/">Achievements</NavLink>
         <NavLinkSeparator/>
-        <NavLink to="/">Hall of Fame</NavLink>
+        <NavLink to="/HallOfFame">Hall of Fame</NavLink>
       </NavLinkWrapper>
     </Nav>
   );
